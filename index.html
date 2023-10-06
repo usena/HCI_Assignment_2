@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Assignment-02</title>
+    <style>
+        body {
+            background-image: url('3.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .content{
+            margin: 15px 550px;
+            padding: 50px;
+            background-color: rgba(109, 30, 3, 0.9);
+            color: white;
+            border-radius: 25px;
+        }
+        table,tr,th,td{
+            border-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Order Your Fast Food</h1><br>
+        <form style="justify-content:center; display:flex;">
+            <table>
+                <tr>
+                    <td>
+                        <label for="bread">Your Bread Choice:</label>
+                    </td>
+                    <td>
+                        <select name="bread" id="bread">
+                            <option>Select an option</option>
+                            <option value="bagel">Bagel</option>
+                            <option value="burger">Burger Bun</option>
+                            <option value="hotdog">Hot Dog Bun</option>
+                            <option value="baguette">Baguette</option>
+                            <option value="white">White Bread</option>
+                        </select>
+                    </td>
+                </tr>
+                <div>
+                    <tr>
+                        <td rowspan="9">Choose Your Fillings:</td>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="lettuce">
+                            <label for="lettuce">Lettuce</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="tomato">
+                            <label for="tomato">Tomato</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="onion">
+                            <label for="onion">Onion</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="pickle">
+                            <label for="pickle">Pickled Cucumber</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="egg">
+                            <label for="egg">Egg</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="cheese">
+                            <label for="cheese">Cheese</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="bacon">
+                            <label for="bacon">Bacon</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="chicken">
+                            <label for="chicken">Chicken</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ingredients" id="beef">
+                            <label for="beef">Beef</label>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>Do you want it spicy?</legend>
+                                <input type="radio" name="spicy" id="yes" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="spicy" id="no" value="no">
+                                <label for="no">No</label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2">When do you want your order to be delivered by?</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="datetime-local" id="delivery-time" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telephone">Phone Number: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="telephone" required>
+                        </td>
+                    </tr>
+                </div>
+                <tr>
+                    <td>
+                        <label for="info">Additional Info:</label>
+                    </td>
+                    <td>
+                        <textarea name="info" id="info" cols="30" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Order">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
